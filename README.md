@@ -1,13 +1,16 @@
 # GO.__GB__
 ladies and gentlemen this is GO
-----------------------------------------(imprimir hola mundo)
+```bash
+## (imprimir hola mundo)
 package main
 import "fmt"
 
 func main(){
     fmt.Println("hola Mundo")
 }
-----------------------------------------(operador de declaración corta)
+```
+## (operador de declaración corta)
+```bash
 package main
 import "fmt"
 
@@ -20,8 +23,10 @@ func main(){
     fmt.Println(y)
     fmt.Println(z)
 }
----------------------------------------
-(las variables son de los siguientes tipos)
+```
+
+## (las variables son de los siguientes tipos)
+```bash
 package main
 import "fmt"
 
@@ -34,6 +39,6 @@ func main(){
     fmt.Println(y)
     fmt.Println(z)
 }
---------------------------------------
-package main
-import "fmt"
+```
+
+
