@@ -1,6 +1,6 @@
 # GO.__GB__
 ## Ladies and gentlemen this is GO
-##  (imprimir hola mundo)
+#  (imprimir hola mundo)
 ```bash
 
 package main
@@ -10,7 +10,7 @@ func main(){
     fmt.Println("hola Mundo")
 }
 ```
-## (operador de declaración corta)
+# (operador de declaración corta)
 ```bash
 package main
 import "fmt"
@@ -26,7 +26,7 @@ func main(){
 }
 ```
 
-## (las variables son de los siguientes tipos)
+# (las variables son de los siguientes tipos)
 ```bash
 package main
 import "fmt"
@@ -41,7 +41,7 @@ func main(){
     fmt.Println(z)
 }
 ```
-## (tipo subyacente, raíz o tipo implícito %T)
+# ejercicio 4 (tipo subyacente, raíz o tipo implícito %T)
 ```bash
 package main 
 import("fmt")
@@ -52,12 +52,35 @@ func main(){
             fmt.println(x)
             fmtprintf("El tipo de x es : %T\n", x)
             
-            x=42
+            x=42 //? le asigno a x 42
             fmt.println(x)
             
             y = int(x)
             fmt.Println(y)
             fmt.Printf("%T",y)
+}
+```
+`fmt.printf` especifica el formato
+`%T` para impromir Tipos es decir de que tipo es el valor
+`\n` inprime una linea nueva
+# ejercicio #5 
+```bash
+package main
+import ("fmt")
+
+type numero int
+var x numero
+var y int
+func main{
+    fmt.println(x)
+    fmt.printf('el tipo de x es: %T, x)
+    x = 20
+    fmt.Println(x)
+    
+    y =int(x)
+    fmt.Println(y)
+    fmt.Printf("%T",y)
+    
 }
 ```
 
