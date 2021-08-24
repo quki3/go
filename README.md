@@ -24,4 +24,13 @@ uint8 //? solo podra obtener valores del 0 al 255 sin incluir numeros negativos 
 %#U //te devuelve el unicode point uf8 de cada letra
 ```
 
-##
+## sistemas numericos
+convercion de base decimal a otra base
+```bash
+numero decimal | base
+(resto 1)        (resultado)| base
+                  (resto 2)    (resultado) | base
+                                  (resto 3)    (resultado final)
+resultado final + resto 3 + resto 2 + resto 1 = numero.
+                                                      .base
+```
