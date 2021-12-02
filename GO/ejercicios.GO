@@ -1,7 +1,7 @@
-# GO.__GB__
-## Ladies and gentlemen this is GO
-#  (imprimir hola mundo)
-```bash
+// GO.__GB__
+// Ladies and gentlemen this is GO
+//  (imprimir hola mundo)
+
 
 package main
 import "fmt"
@@ -9,9 +9,9 @@ import "fmt"
 func main(){
     fmt.Println("hola Mundo")
 }
-```
-# (operador de declaración corta)
-```bash
+
+// (operador de declaración corta)
+
 package main
 import "fmt"
 
@@ -24,10 +24,10 @@ func main(){
     fmt.Println(y)
     fmt.Println(z)
 }
-```
 
-# (las variables son de los siguientes tipos)
-```bash
+
+// (las variables son de los siguientes tipos)
+
 package main
 import "fmt"
 
@@ -40,9 +40,9 @@ func main(){
     fmt.Println(y)
     fmt.Println(z)
 }
-```
-# ejercicio 4 (tipo subyacente, raíz o tipo implícito %T)
-```bash
+
+// ejercicio 4 (tipo subyacente, raíz o tipo implícito %T)
+
 package main 
 import("fmt")
 
@@ -59,12 +59,13 @@ func main(){
             fmt.Println(y)
             fmt.Printf("%T",y)
 }
-```
-`fmt.printf` especifica el formato
-`%T` para impromir Tipos es decir de que tipo es el valor
-`\n` inprime una linea nueva
-# ejercicio #5 
-```bash
+
+//`fmt.printf` especifica el formato
+//`%T` para impromir Tipos es decir de que tipo es el valor
+//`\n` inprime una linea nueva
+
+// ejercicio #5 
+
 package main
 import ("fmt")
 
@@ -73,7 +74,7 @@ var x numero
 var y int
 func main{
     fmt.println(x)
-    fmt.printf('el tipo de x es: %T, x)
+    fmt.printf('el tipo de x es: %T', x)
     x = 20
     fmt.Println(x)
     
@@ -82,6 +83,13 @@ func main{
     fmt.Printf("%T",y)
     
 }
-```
+
+//EJERCICIO NRO 6 
+
+package main
+import("fmt")
+func main(){
+    fmt.Printf("%d\t%b\t%x",a,a,a)
+}
 
 
