@@ -92,4 +92,60 @@ func main(){
     fmt.Printf("%d\t%b\t%x",a,a,a)
 }
 
+/*Ejercicio práctico #2
+Usando los siguientes operadores, escribe expresiones y asigna sus valores a variables:
+==
+<=
+>=
+!=
+<
+>
+Imprime los valores de las variables. 
+*/
+package main
 
+import (
+    "fmt"
+)
+func main(){
+    //declaramos y asignamos lo que nos retorna la expresion
+    a := (42 == 42)
+    b := (42 <= 42)
+    c := (42 >= 42)
+    d := (42 != 41)
+    e := (42 < 43)
+    f := (42 > 41)
+    //imprimir por consola
+    fmt.println(a,b,c,d,e,f)
+}
+
+/*Ejercicio práctico #3
+Crea constantes CON TIPO y SIN TIPO. Imprime el valor de las mismas.*/
+
+//definimos el paclkage
+package main
+//importamos los modulos que usamos
+import "fmt"
+
+//creamos constantes
+cosnt (
+    a = 42
+    b int = 43
+)
+
+//definimos la funcion a usar
+func main(){
+    fmt.println(a,b)
+}
+
+/*Ejercicio práctico #4
+Escribe un programa que 
+Asignar un int a una variable
+Imprímelo en decimal, binario, y hex
+Has shifts de bits de ese int una posición a la izquierda y asigna eso a una variable
+Imprime esa variable en decimal, binario, y hex
+*/
+//definimos package
+package main
+//import fmt
+import ("fmt")
