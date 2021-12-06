@@ -149,3 +149,64 @@ Imprime esa variable en decimal, binario, y hex
 package main
 //import fmt
 import ("fmt")
+//definimos la func 
+func main(){
+    //declaramos la variables
+    a:= 42
+    //imprimimos los valores en %d decimal %b binario %#x exagecimal el 
+    //numeral adelante es para que nos coloque el cero adelente
+    // \t nos da un tabulado
+    fmt.Printf("%d\t%b\t%#x\n",a,a,a)
+    //declaramos una varible le hacemos bit shifting 
+    b:= a << 1
+    fmt.Printf("%d\t%b\t%#x",b,b,b)
+
+}
+
+/*Ejercicio práctico #5
+Crea una variable de tipo string usando un string literal no interpretado (raw string literal). Imprímelo.*/
+
+//definimos el package
+package main
+//import lo que usamos fmt
+import "fmt"
+//declaramos constanstes
+
+//definimos la funcion
+func main(){
+    // definimos una raw string literal o string no interpretado que es usando backtips
+    a := ` Esto es
+    un string literal no interpretado`
+
+    //imprimimos
+    fmt.Println(a)
+
+}
+
+/*Ejercicio práctico #6
+Usando iota, crea 4 constantes para los PRÓXIMOS 4 años.
+ Imprime los valores de las constantes.*/
+
+//package
+package main
+//import fmt
+import "fmt"
+//definimoos const
+const (
+    a = 2020 + iota
+    b = 2020 + iota
+    c = 2020 + iota
+    d = 2020 + iota
+)
+//def func
+func main(){
+    //imprimimos
+    fmt.Println(a)
+    fmt.Println(b)
+    fmt.Println(c)
+    fmt.Println(d)
+}
+
+
+
+
