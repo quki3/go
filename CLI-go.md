@@ -20,6 +20,7 @@ o
 p
 q
 r
+go run namearch.go `corre el archivo`
 s
 t
 w
