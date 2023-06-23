@@ -8,7 +8,7 @@ import "fmt"
 // func - define a function
 // main - is the enter poin of go
 func main(){
-        // Println - print formated oupput usually in the console or Terminal
+        // Println - print formated oupput usually in the console or Terminal,implements formatted I/O with functions analogous to C's printf and scanf '
 	fmt.Println("Hello, World!")
 }
 
