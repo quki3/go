@@ -1,5 +1,5 @@
-//Package main
-// When you build reusable pieces of code, you will develop a package as a shared library. But when you develop executable programs, you will use the package “main” for making the package as an executable program. The package “main” tells the Go compiler that the package should compile as an executable program instead of a shared library. The main function in the package “main” will be the entry point of our executable program. When you build shared libraries, you will not have any main package and main function in the package.
+// package - refers to a container or bundle that organizes related code, files, and resources together. It is a way of structuring and organizing code within a software project
+// main - when you develop executable programs, you will use the package “main” for making the package as an executable program. The package “main” tells the Go compiler that the package should compile as an executable program instead of a shared library. The main() function in the package “main” will be the entry point of our executable program. When you build shared libraries, you will not have any main package and main function in the package.
 package main 
 
 // import - It's The way you can leverage funtionalites and APIs from external package m your own code
