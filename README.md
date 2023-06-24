@@ -1,7 +1,9 @@
 # GO (goland) 
-`last update jun 22 2023`
+`last update jun 24 2023`
+## welcome
+you are still here? great so les't go!
 
-## INTRODUCTION
+## Introduction
 Go or golang is one of the youngest programming languages that is become more and more popular in the cloud engineering world
 Was created by google in 2007 and open sourced in 2009
 
@@ -37,7 +39,7 @@ copiled language
 	 - (E) Verify that you've installed Go by opening a command prompt and typing the following command: `go version`
 
 ## CHALLENGES
-1. /
+1. 1/
    - /A  Get started with Hello, World. With the follow <a href="https://go.dev/doc/tutorial/getting-started#code">doc</a> create a programm that print "hello world" in the terminal then make the testing for this.
    - /B  Call code in an external package. With the follow <a href="https://go.dev/doc/tutorial/getting-started#code">doc</a>
    - /C. Create a Go module with the follow <a href="https://go.dev/doc/tutorial/create-module">documentaion</a> create two modules.
