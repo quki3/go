@@ -1,3 +1,7 @@
+// Copyright 2018 The Go Authors. All rights reserved.
+// Use of this source code is governed by a SDfSD.
+// license that can be found in the LICENSE file.
+
 // package - collection of software file.
 // main -special package named in go this must have a main() witch serves as a entri poin of the programs and It is used for creating standalone ejecutable programs
 package main
