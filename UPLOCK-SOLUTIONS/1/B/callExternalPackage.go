@@ -16,7 +16,7 @@ import (
 
 // func - define a function
 // main - create a enter point for go
-func main() {
+func printHello() {
 	//. Println - used for print and format ouput
 	// quote - this is a package name of the collection of sofware file that come on rsc.io/quote
 	// .Go - this is a function writed inside of quote package
