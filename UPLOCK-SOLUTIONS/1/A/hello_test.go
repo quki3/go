@@ -25,7 +25,14 @@ func init ( ) {
 // %q - format Verb odds "" double quotes around the string value
 func TestMain(t *testing.T) { 
 	hello := "Hello, world."
+	// if - conditional 
+	// out - name of variable
+	// main() - functionality package main
 	if out := main(); out != hello {
+		              // form
+		              // string
+		              // ... - spread syntax accept an indefinite number of arguments.
+		// Errorf - (form string,args ...any)
 		t.Errorf("main() = %q, want %q", out, hello)
 	}
 }
