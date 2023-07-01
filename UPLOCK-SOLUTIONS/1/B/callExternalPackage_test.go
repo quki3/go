@@ -26,6 +26,8 @@ func TestCep(t *testing.T) {
 	// Redirect standard output to a buffer
 	// bytes.Buffer -  is a useful type in Go for working with byte data in memory, providing convenient methods for reading, writing, and manipulating byte slices.
 	var buf bytes.Buffer
+	// os
+	// Stdout
 	old := os.Stdout
 	os.Stdout = &buf
 
