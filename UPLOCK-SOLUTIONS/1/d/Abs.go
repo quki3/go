@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func main() {
+func abs() {
 	x := math.Abs(-2)
 	fmt.Printf("%.1f\n", x)
 
