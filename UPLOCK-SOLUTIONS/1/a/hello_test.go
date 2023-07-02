@@ -8,6 +8,8 @@ import (
   "os"
   // testing package , which is part of standard Library of go
   "testing"
+	"bytes"
+
   )
 
 // func - The keyword used to define a function.
@@ -19,20 +21,33 @@ func init ( ) {
 // TestMain - TestXxx(*testing.T)where Xxx does not start with a lowercase letter.
 // func - is the Keyword used to define a function
 // t *testing.T - t *testing.T is a parameter type used in testing functions to receive a testing-related object of type *testing.T.you typically include t *testing.T as a parameter to access the testing-related functionalities.
-// if - It's a conditional statement used to executed a block of code
 // := - we can defined a variable is The sort form of var 
 // != - operador used to check inequality between TWo values
 // %q - format Verb odds "" double quotes around the string value
-func TestMain(t *testing.T) { 
-	hello := "Hello, world."
+func TestPh(t *testing.T) { 
+	
+	var buf bytes.buffer
+	old := os.Stdout
+	os.Stdout = &buf
+
+	ph()
+
+	os.Stdout = old
+
+	expected := "hello world\n"
+	actual:= buf.String()
+
 	// if - conditional 
 	// out - name of variable
 	// main() - functionality package main
-	if out := main(); out != hello {
+	if actual != expected {
 		              // form
 		              // string
 		              // ... - spread syntax accept an indefinite number of arguments.
 		// Errorf - (form string,args ...any)
-		t.Errorf("main() = %q, want %q", out, hello)
+		t.Errorf("printHello() = %q, want %q", actual, expected)
 	}
+}
+func main(){
+	TestPh()
 }
