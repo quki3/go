@@ -10,7 +10,7 @@ package main
 
 // import - what I need
 // testing - standar
-// bytes
+// bytes - package is commonly used for tasks such as string manipulation, buffering, and I/O operations involving byte data.
 import (
 	"bytes"
 	"fmt"
@@ -26,8 +26,7 @@ func TestCep(t *testing.T) {
 	// Redirect standard output to a buffer
 	// bytes.Buffer -  is a useful type in Go for working with byte data in memory, providing convenient methods for reading, writing, and manipulating byte slices.
 	var buf bytes.Buffer
-	// os
-	// Stdout
+	// os.Stdout -you can write data to the standard output (terminal)
 	old := os.Stdout
 	os.Stdout = &buf
 
@@ -46,5 +45,5 @@ func TestCep(t *testing.T) {
 
 func main() {
 	// Run the tests
-	testing.Main(nil, nil, nil, nil)
+	TestCep()
 }
