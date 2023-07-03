@@ -1,12 +1,12 @@
 # go (goland) 
-`last update jul 1 2023`
+`last update jul 3 2023`
 ## welcome
 you are still here? great so les't go!
 
 ## Introduction
 ## Instalation 
 <a href="https://go.dev/dl/">go.dev</a>
-## challengea
+## challenges
 1. 1/
    - /A  Get started with Hello, World. With the follow <a href="https://go.dev/doc/tutorial/getting-started#code">doc</a> create a programm that print "hello world" in the terminal then make the testing for this.
    - /B  Call code in an external package. With the follow <a href="https://go.dev/doc/tutorial/getting-started#code">doc</a>
