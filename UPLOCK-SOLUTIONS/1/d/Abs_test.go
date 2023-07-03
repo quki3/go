@@ -5,11 +5,11 @@ import (
     "testing"
 )
 
-func TestXxx(t *testing.T) {
+func TestAbs(t *testing.T) {
     num := -5.6
     expected := 5.6
 
-    result := Xxx(num)
+    result := abs(num)
 
     if result != expected {
         t.Errorf("Expected %f, but got %f", expected, result)
