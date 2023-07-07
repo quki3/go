@@ -3,7 +3,8 @@
 ## welcome
 you are still here? great so les't go!
 
-## Introduction
+## documentation
+wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source</a>.
 ## Instalation 
 <a href="https://go.dev/dl/">go.dev</a>
 ## challenges
