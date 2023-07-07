@@ -1,0 +1,1 @@
+// []byte - is a data type that represents a sequence of bytes. it is commonly used to manipulate and store binary data, such as the contents of a file,network package, or the body of an HTTP request or response.

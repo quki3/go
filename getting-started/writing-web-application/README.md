@@ -4,4 +4,4 @@ covered in this tutorial
 3. Using the html/template package to process HTML templates
 4. Using the regexp package to validate user input
 5. Using closures
-### your <a href="https://go.dev/doc/articles/wiki/">doc</a>
+<sub> your <a href="https://go.dev/doc/articles/wiki/">doc</a></sub>
