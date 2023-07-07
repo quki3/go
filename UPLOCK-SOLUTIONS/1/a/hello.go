@@ -7,9 +7,14 @@ import "fmt"
 
 // func - define a function
 // main - is the enter poin of go
+func goruntime(){
+        fmt.Println("this run in go run time")
+}
+
 func ph(){
+        go goruntime()
         // Println - print formated oupput usually in the console or Terminal,implements formatted I/O with functions analogous to C's printf and scanf '
-	fmt.Println("Hello, World!")
+	      fmt.Println("Hello, World!")
 }
 
 

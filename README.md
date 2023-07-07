@@ -15,7 +15,7 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - /D Test, with this documentation <a href="https://pkg.go.dev/testing#hdr-Examples">testing</a> make a funcion that must retur a positive num use Abs function provided by the math package. and test the number that this func return you must make two file num.go and num_test.go
    - f/ make collection of distinguishable entities such that for any entity it is determined without ambiguity whether it belongs to the collection or not ( set, objects).
    - g/ how you can determine if x belong to X or does not belong to x write a programme that do this for you.
-
+   - h/ prints its command-line arguments on a single line
 
 
 
