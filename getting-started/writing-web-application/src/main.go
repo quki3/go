@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"html/template"
 	"os"
 	"log"
 	"net/http"
@@ -10,6 +10,20 @@ import (
 type Page struct {
 	Title string
 	Body []byte
+}
+
+/*** refactoring ***/
+func renderTemplate(w http.ResponseWrite, tmpl string, p *Page){
+	t, err := template.ParseFiles(tmpl + ".html")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	err = t.Execute(w, p)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
 }
 
 /*** address persistent storage ***/
@@ -31,13 +45,42 @@ func loadPage(title string) (*Page, error) {
 /*** view Handler ***/
 func viewHandler(w http.ResponseWriter, r *http.Request){
 	title := r.URL.Path[len("/view/"):]
-	p, _ := loadPage(title)
-	fmt.Fprintf(w, "<h1>%s</h1><div>%s</div>", p.Title, p.Body)
+	p, err := loadPage(title)
+	if err != nil{
+		http.Redirect(w, r, "/edit/"+title, http.StatusFound)
+		return
+	}
+	renderTemplate(w,"view",p)
+}
+
+/*** editHandler ***/
+func editHandler(w http.ResponseWriter, r *http.Request){
+	title := r.URL.Path[len("/edit/"):]
+	p, err := loadPage(title)
+	if err != nil{
+		p = &Page{title:title}
+	}
+  renderTemplate(w, "edit", p)
+}
+/*** saveHandler ***/
+func saveHandler(w http.ResponseWriter, r *http.Resquest){
+	title := r.URL.Path[len("/save/"):]
+	body := r.FormValue("body")
+	p := &Page{title: title, Body: []byte(body)}
+	err := p.save()
+	if err != nil{
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return 
+	}
+	http.redirect(w, r, "/view/" +title, http.StatusFound)
 }
 
 /** use */
 func main(){
-	http.HandleFunc("/view/",viewHandler)
+	http.HandleFunc("/view/", viewHandler)
+	http.HandleFunc("/edit/", editHandler)
+	http.HandleFunc("/save/", saveHandler)
+
 	log.Fatal(http.ListenAndServe(":8080",nil))
 }
 
