@@ -17,6 +17,7 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - g/ how you can determine if x belong to X or does not belong to x write a programme that do this for you.
    - h/ prints its command-line arguments on a single line use os.Args[]
    - i/ Modify the os.Arg[] program to print the index and value of each of its arguments,one per line.
+   - j/ reads input lines, counts their occurrences, and prints lines that appear more than once.
 
 
 
