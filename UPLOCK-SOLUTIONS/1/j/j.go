@@ -19,13 +19,14 @@ func main() {
     fmt.Println("Enter lines of text (Ctrl+D or Ctrl+Z to stop):")
     for input.Scan() {
         counts[input.Text()]++
-    }
+    
     
     //***$>_
-    fmt.Println("\nCount of each line:")
+        fmt.Println("\nCount of each line:")
     // Print lines that appear more than once
-    for line, n := range counts {
+        for line, n := range counts {
             fmt.Printf("%d\t%s\n", n, line)
+        }
     }
 }
 
