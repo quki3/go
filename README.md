@@ -18,7 +18,8 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - h/ prints its command-line arguments on a single line use os.Args[]
    - i/ Modify the os.Arg[] program to print the index and value of each of its arguments,one per line.
    - j/ reads input lines, counts their occurrences, and prints lines that appear more than once.
-
+   - k/ read from the standard input or handle a list of file names,using os.Open to open each one
+   - l/ introduce the function ReadFile in the program k (from the io/ioutil package), which reads the entire contents of a named file, and strings.Split, which splits a string into a slice of substrings.
 
 
 
