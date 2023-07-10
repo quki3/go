@@ -11,8 +11,9 @@ func main () {
 	counts := make(map[string]int)
 														// take 2th params
 	for _, filename := range os.Args[1:]{
+												// read the file
 		data, err := ioutil.ReadFile(filename)
-		fmt.Println(data)
+		fmt.Println("first for",data)
 		binary := ""
 		for i := 0; i < len(data); i++ {
 			binary += strconv.FormatInt(int64(data[i]),2)
@@ -26,13 +27,13 @@ func main () {
 		for _, line := range strings.Split(string(data), "\n"){
 
 			counts[line]++
-			fmt.Println(counts)
+			fmt.Println("second for",counts)
 		}
 	}
 	for line, n := range counts {
-		fmt.Printf(line)
-		if n > 1 {
-			fmt.Printf("%d\t%s\n", n, line)
+		fmt.Printf("third for",line)
+		if n >= 0 {
+			fmt.Printf("%d\t%s\n , inside thirs's if ", n, line)
 		}
 	}
 }
