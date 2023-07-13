@@ -21,7 +21,7 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - k/ read from the standard input or handle a list of file names,using os.Open to open each one
    - l/ introduce the function ReadFile in the program k (from the io/ioutil package), which reads the entire contents of a named file, and strings.Split, which splits a string into a slice of substrings.
    - m/ demonstrates basic usage of Go’s standard image packages, which we’ll use to create a sequence of bit-mapped images and then encode the sequence as a GIF animation.
-   - n/
+   - n/ called fetch that fetches the content of each specified URL and prints it as uninter preted text.
 
 
 <sub> resources
