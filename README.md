@@ -22,7 +22,7 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - l/ introduce the function ReadFile in the program k (from the io/ioutil package), which reads the entire contents of a named file, and strings.Split, which splits a string into a slice of substrings.
    - m/ demonstrates basic usage of Go’s standard image packages, which we’ll use to create a sequence of bit-mapped images and then encode the sequence as a GIF animation.
    - n/ called fetch that fetches the content of each specified URL and prints it as uninter preted text.
-
+   - o/ use io.Copy(dst, src) reads from src and writes to dst. Use it instead of ioutil.ReadAll to copy the response body to os.Stdout without requiring a buffer large enough to hold the entire stream. Be sure to check the error result of io.Copy.
 
 <sub> resources
 Oficial page
