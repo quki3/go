@@ -26,6 +26,6 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - o/ use io.Copy(dst, src) reads from src and writes to dst. Use it instead of ioutil.ReadAll to copy the response body to os.Stdout without requiring a buffer large enough to hold the entire stream. Be sure to check the error result of io.Copy.
    - p/ Fetching url concurrently in parallel and reports their times and sizes.
    - q/ find a web site that produces a large amount of data. Investigate caching byrunning fetchall twice in succession to see whether the reported time changes much. do you get the same content each time? Modify fetchall to print its output to a file so it can be examined.
-   - r
+   - r/ Try fetchall with longer argument lists, such as samples from the top million web sites available at alexa.com. How does the program behave if a web site just doesn’t respond?
    - s
    - t
