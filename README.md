@@ -8,7 +8,8 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
 ## Instalation 
 <a href="https://go.dev/dl/">go.dev</a>
 ## challenges
-### 1. 1/ get started
+ 1. 	
+###	1.1/ get started
    - /a  Get started with Hello, World. With the follow <a href="https://go.dev/doc/tutorial/getting-started#code">doc</a> create a programm that print "hello world" in the terminal then make the testing for this.
    - /b  Call code in an external package. With the follow <a href="https://go.dev/doc/tutorial/getting-started#code">doc</a>
    - /c Create a Go module with the follow <a href="https://go.dev/doc/tutorial/create-module">documentaion</a> create two modules.
@@ -31,7 +32,10 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - t/ Counts the number of requests; a request to the URL /count returns the count so far, excluding /count requests themselves:
    - u/ Can report on the headers and form data that it receives, making the server useful for inspecting and debugging requests
    - v/ Each time you load the page, you’ll see a new animation (lissajous)
-   - w
-   - x
+   - w/ Modify the Lissajous server to read parameter values from the URL. For example, you might arrange it so that a URL like http://localhost:8000/?cycles=20 sets the number of cycles to 20 instead of the default 5
+   - x/ 
    - y
    - z
+###	1.2/ program structure
+   - a/
+   - b/
