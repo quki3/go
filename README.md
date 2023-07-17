@@ -27,5 +27,11 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - p/ Fetching url concurrently in parallel and reports their times and sizes.
    - q/ find a web site that produces a large amount of data. Investigate caching byrunning fetchall twice in succession to see whether the reported time changes much. do you get the same content each time? Modify fetchall to print its output to a file so it can be examined.
    - r/ Try fetchall with longer argument lists, such as samples from the top million web sites available at alexa.com. How does the program behave if a web site just doesn’t respond?
-   - s
-   - t
+   - s/ write a web server that responds to client requests, if the request is for http://localhost:8000/hello, the response will be URL.Path = "/hello".
+   - t/ counts the number of requests; a request to the URL /count returns the count so far, excluding /count requests themselves:
+   - u
+   - v
+   - w
+   - x
+   - y
+   - z
