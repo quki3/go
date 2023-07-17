@@ -30,7 +30,7 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - s/ Write a web server that responds to client requests, if the request is for http://localhost:8000/hello, the response will be URL.Path = "/hello".
    - t/ Counts the number of requests; a request to the URL /count returns the count so far, excluding /count requests themselves:
    - u/ Can report on the headers and form data that it receives, making the server useful for inspecting and debugging requests
-   - v/ 
+   - v/ Each time you load the page, you’ll see a new animation (lissajous)
    - w
    - x
    - y
