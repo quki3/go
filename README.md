@@ -1,5 +1,5 @@
 # go (goland) 
-`last update jul 14 2023`
+`last update jul 18 2023`
 ## welcome
 you are still here? great so les't go!
 
