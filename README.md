@@ -39,7 +39,7 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - a/	Prints the boiling point of water.
    - b/	Print two Fahrenheit to Celsius conversions
    - c/	A set of variables can also be initialized by calling a function that returns multiple values.
-   - d/ 
+   - d/ Pointers are key to the flag package, which uses a program’s command-line arguments to set the values of certain variables distributed throughout the program. To illustrate, this variation on the earlier echo command takes two optional flags: -n causes echo to omit the trailing newline that would normally be printed, and -s sep causes it to separate the output arguments by the contents of the string sep instead of the default single space.
    - e/
    - f/
    - g/
