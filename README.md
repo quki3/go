@@ -43,7 +43,7 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - e/ Each variable that escapes requires an extra memory allocation
    - f/ tuple : the n-th Fibonacci number iteratively
    - g/ computing the greatest common divisor of two intergers
-   - h/
+   - h/ illustrate type declarations performs Celsius and Fahrenheit temperature computations. package tempconv.
    - i/
    - j/
    - k/
