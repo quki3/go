@@ -45,5 +45,19 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - g/ Computing the greatest common divisor of two intergers
    - h/ Illustrate type declarations performs Celsius and Fahrenheit temperature computations. package tempconv.
    - i/ Stored in two files to show how declarations in separate files of a package are accessed
-   - j/
-   - k/
+   - j/ how to precompute a table of values, which is often a useful programming technique.
+   - k/ 
+   - l/
+   - m/
+   - o/
+   - p/
+   - q/
+   - r/
+   - s/
+   - t/
+   - u/
+   - v/
+   - w/
+   - x/
+   - y/
+   - z/
