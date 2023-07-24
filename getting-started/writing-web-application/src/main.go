@@ -27,9 +27,14 @@ func renderTemplate(w http.ResponseWrite, tmpl string, p *Page){
 }
 
 /*** address persistent storage ***/
-func (p *Page) save() error {
-	filename := p.Title + ".txt"
-	return os.WriteFile(filename, p.Body, 0600)
+func (p *Page) save() error {		// *Page this mean that is a type of date, see line #10
+					// save() is the name of the func
+					// error this mean bacically that the func don't return any except and error if occour typeof error
+	filename := p.Title + ".txt"		
+	return os.WriteFile(filename, p.Body, 0600)		// os: documentation: https://pkg.go.dev/os#pkg-index
+								// .WriteFile(): documentation: https://pkg.go.dev/os#example-WriteFile
+								//exam: func WriteFile(name string, data []byte, perm FileMode) error
+								//how you can see this func return a error you must handle this in the future
 }
 
 /*** load Pages ***/
