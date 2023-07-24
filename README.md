@@ -46,9 +46,9 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - h/ Illustrate type declarations performs Celsius and Fahrenheit temperature computations. package tempconv.
    - i/ Stored in two files to show how declarations in separate files of a package are accessed
    - j/ how to precompute a table of values, which is often a useful programming technique.
-   - k/ 
-   - l/
-   - m/
+   - k/ what are the lexical block, scope and rules? 
+   - l/ how bitwise operations can be used?
+   - m/ Use the built-in len function returns a signed int, as in this loop which announces prize medals in reverse order
    - o/
    - p/
    - q/
