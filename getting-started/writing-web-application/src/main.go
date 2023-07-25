@@ -39,12 +39,12 @@ func (p *Page) save() error {		// *Page this mean that is a type of date, see li
 
 /*** load Pages ***/
 func loadPage(title string) (*Page, error) {
-	filename := title + ".txt"
-	body, err := os.ReadFile(filename) // The _ (underscore) symbol is used to ignore the second return value, which is an error indicating whether the file reading operation encountered any errors.
+	filename := title + ".txt"		// handle the parameter title
+	body, err := os.ReadFile(filename) 	// The _ (underscore) symbol is used to ignore the second return value, which is an error indicating whether the file reading operation encountered any errors.
 	if err != nil {
 		return nil,err
 	}
-	return &Page{Title:title, Body:body},nil
+	return &Page{Title:title, Body:body},nil		//return a pointer to a Page literal constructed with the proper title and body values
 }
 
 /*** view Handler ***/
