@@ -35,7 +35,7 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - x/ 
    - y
    - z
-###	1.2
+### 2 (theGoProgramingLenguage)
    - a/	Prints the boiling point of water.
    - b/	Print two Fahrenheit to Celsius conversions
    - c/	A set of variables can also be initialized by calling a function that returns multiple values.
@@ -73,3 +73,4 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
 ### 3.4/ Booleans
    - /a how you whiting a operation of conversion function that return 0 if is true and 1 if false
    - /b how you will be a reports wether i is non-zero?
+### 3.5/ String
