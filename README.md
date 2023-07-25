@@ -61,7 +61,8 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - x/
    - y/
    - z/
-### 3. Basic Data Types
+### 3.3 Basic Data Types
 3. -./3.3 Complex Numbers
    - /a how can you use build-in function complex adn build-in function real, imag extract components?
+   - /b how you can create a program that uses complex128 arithmetic to generate a Mandelbrot set?
 
