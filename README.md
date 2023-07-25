@@ -71,5 +71,5 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - /f  Render ing frac tals at hig h zo om level s demands gre at arithmetic pre cision. Implement the same frac tal using four dif ferent represent ation s of numbers: complex64, complex128, big.Float, and big.Rat. (The latter two typ es are found in the math/big package.Float uses arbitrar y but bounded-precision floating-point; Rat uses unbounded-precision rational numbers.) How do the y compare in performance and memory usage? At what zoom levels do rendering artifacts become visible?
    - /g  Wr ite a web ser ver that renders frac tals and writes the image dat a to the client. Al low the client to specif y the x, y, and zoom values as parameters to the HTTP request.
 ### 3.4/ Booleans
-   - /a
-   - /b
+   - /a how you whiting a operation of conversion function that return 0 if is true and 1 if false
+   - /b how you will be a reports wether i is non-zero?
