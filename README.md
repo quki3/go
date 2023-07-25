@@ -61,8 +61,15 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - x/
    - y/
    - z/
-### 3.3 Basic Data Types
+### 3.3/ Basic Data Types
 3. -./3.3 Complex Numbers
    - /a how can you use build-in function complex adn build-in function real, imag extract components?
    - /b how you can create a program that uses complex128 arithmetic to generate a Mandelbrot set?
-
+   - /c : Implementafull-color Mandelbro t set using the function image.NewRGBA and the typ e color.RGBA or color.YCbCr.
+   - /d Supersamp ling is a technique to reduce the effec t of pixe lat ion by computing the color value at several points wit hin each pixel and tak ing the average.The simplest met hod is to div ide each pixel int o four ‘‘su bpixe ls.’’ Implement it.
+   - /e  Anot her simple frac tal uses Newton’s met hod to find complex solut ion s to a func tion such as z4−1=0. Shade each starting point by the number of iterat ions required to get clos e to one of the four roots. Color each point by the root it appro ach es
+   - /f  Render ing frac tals at hig h zo om level s demands gre at arithmetic pre cision. Implement the same frac tal using four dif ferent represent ation s of numbers: complex64, complex128, big.Float, and big.Rat. (The latter two typ es are found in the math/big package.Float uses arbitrar y but bounded-precision floating-point; Rat uses unbounded-precision rational numbers.) How do the y compare in performance and memory usage? At what zoom levels do rendering artifacts become visible?
+   - /g  Wr ite a web ser ver that renders frac tals and writes the image dat a to the client. Al low the client to specif y the x, y, and zoom values as parameters to the HTTP request.
+### 3.4/ Booleans
+   - /a
+   - /b
