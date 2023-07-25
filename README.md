@@ -8,7 +8,7 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
 ## Instalation 
 <a href="https://go.dev/dl/">go.dev</a>
 ## challenges
-###	1.1
+###	1 tutorial (theGoProgramingLenguage)
    - /a  Get started with Hello, World. With the follow <a href="https://go.dev/doc/tutorial/getting-started#code">doc</a> create a programm that print "hello world" in the terminal then make the testing for this.
    - /b  Call code in an external package. With the follow <a href="https://go.dev/doc/tutorial/getting-started#code">doc</a>
    - /c Create a Go module with the follow <a href="https://go.dev/doc/tutorial/create-module">documentaion</a> create two modules.
@@ -61,3 +61,7 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - x/
    - y/
    - z/
+### 3. Basic Data Types
+3.3   - Complex Numbers
+      /a
+
