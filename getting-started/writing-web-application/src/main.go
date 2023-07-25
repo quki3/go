@@ -49,13 +49,14 @@ func loadPage(title string) (*Page, error) {
 
 /*** view Handler ***/
 func viewHandler(w http.ResponseWriter, r *http.Request){
-	title := r.URL.Path[len("/view/"):]
-	p, err := loadPage(title)
+	title := r.URL.Path[len("/view/"):]			// count the lent of /view/ = [7:] this get only the word that go then url
+	p, err := loadPage(title)				// 
 	if err != nil{
 		http.Redirect(w, r, "/edit/"+title, http.StatusFound)
 		return
 	}
-	renderTemplate(w,"view",p)
+	renderTemplate(w,"view",p)		// standart func of go that parce one or more template and create a new template that
+						// be execueted with dynamic data.
 }
 
 /*** editHandler ***/
@@ -65,7 +66,7 @@ func editHandler(w http.ResponseWriter, r *http.Request){
 	if err != nil{
 		p = &Page{title:title}
 	}
-  renderTemplate(w, "edit", p)
+  	renderTemplate(w, "edit", p)
 }
 /*** saveHandler ***/
 func saveHandler(w http.ResponseWriter, r *http.Resquest){
