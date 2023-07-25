@@ -50,7 +50,7 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - l/ how bitwise operations can be used?
    - m/ Use the built-in len function returns a signed int, as in this loop which announces prize medals in reverse order
    - o/ How you can use the lib math for prints the powers of e with three decimal digits of precision?
-   - p/
+   - p/ Surface computes an SVG rendering of a 3-D surface function
    - q/
    - r/
    - s/
