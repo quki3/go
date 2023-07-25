@@ -62,6 +62,6 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - y/
    - z/
 ### 3. Basic Data Types
-3.3   - Complex Numbers
-      - /a how can you use build-in function complex adn build-in function real, imag extract components?
+3. -./3.3 Complex Numbers
+   - /a how can you use build-in function complex adn build-in function real, imag extract components?
 
