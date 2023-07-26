@@ -11,4 +11,10 @@ func main (){
   fmt.Println(s[7:]) //"world"
   fmt.Println(s[:]) //"hello, world"
   fmt.Println("goodbye"+ s[5:]) //"goodbye, world"
+  s := "left foot"
+  t := s
+  s += ", right foot"
+  fmt.Println(s) // new string
+  fmt.Println(t) // old string
+  s[0] = 'L' //compile error: cannot assign to s[0]
 }
