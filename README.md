@@ -74,3 +74,4 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - /a how you whiting a operation of conversion function that return 0 if is true and 1 if false
    - /b how you will be a reports wether i is non-zero?
 ### 3.5/ String
+   - /a how can you use build-in len function return the number  of bytes (not runes) in a string and the index operation s[i] retrievas the i-th byte  of string s.
