@@ -12,17 +12,15 @@ type Page struct {
 	Body []byte
 }
 
+/*** global variable ***/
+var templates = template.Must(template.ParseFiles("edit.html", "view.html"))
+
 /*** refactoring ***/
 func renderTemplate(w http.ResponseWrite, tmpl string, p *Page){
-	t, err := template.ParseFiles(tmpl + ".html")
+	err := templates.ExecuteTemplete(w, tmpl+".html", p)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
-	}
-
-	err = t.Execute(w, p)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
 }
 
