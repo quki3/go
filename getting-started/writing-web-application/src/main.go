@@ -58,7 +58,10 @@ func loadPage(title string) (*Page, error) {
 
 /*** view Handler ***/
 func viewHandler(w http.ResponseWriter, r *http.Request){
-	title := r.URL.Path[len("/view/"):]			// count the lent of /view/ = [7:] this get only the word that go then url
+	title, err := getTitle(w, r)
+	if err != nil {
+		return 
+	}
 	p, err := loadPage(title)				// 
 	if err != nil{
 		http.Redirect(w, r, "/edit/"+title, http.StatusFound)
@@ -70,7 +73,10 @@ func viewHandler(w http.ResponseWriter, r *http.Request){
 
 /*** editHandler ***/
 func editHandler(w http.ResponseWriter, r *http.Request){
-	title := r.URL.Path[len("/edit/"):]
+	title, err := getTitle(w, r)
+	if err != nil {
+		return
+	}
 	p, err := loadPage(title)
 	if err != nil{
 		p = &Page{title:title}
@@ -79,7 +85,10 @@ func editHandler(w http.ResponseWriter, r *http.Request){
 }
 /*** saveHandler ***/
 func saveHandler(w http.ResponseWriter, r *http.Resquest){
-	title := r.URL.Path[len("/save/"):]
+	title, err := getTitle(w, r)
+	if err != nil {
+		return
+	}
 	body := r.FormValue("body")
 	p := &Page{title: title, Body: []byte(body)}
 	err := p.save()
