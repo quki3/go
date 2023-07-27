@@ -76,3 +76,6 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
 ### 3.5/ String
    - /a how can you use build-in len function return the number  of bytes (not runes) in a string and the index operation s[i] retrievas the i-th byte  of string s.
    - /b can you do A range lo op decodes a UTF-8-enco ded str ing?
+   - /c The bytes package provides the Buffer type for efficient manipu lat ion of byte slices. A
+Buffer st arts out emp ty but grows as dat a of typ es li ke string, byte, and []byte are writt en to it
+   - /d
