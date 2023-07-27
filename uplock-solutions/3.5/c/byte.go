@@ -4,7 +4,7 @@ import (
 )
 
 func main (){
-  fmt.Println()
+  fmt.Println(intsToString([]int{1,2,3})    //[1, 2, 3]
 }
 
 func intsToString(value []int) string {
