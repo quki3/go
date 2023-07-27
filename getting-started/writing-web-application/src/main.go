@@ -14,6 +14,17 @@ type Page struct {
 
 /*** global variable ***/
 var templates = template.Must(template.ParseFiles("edit.html", "view.html"))
+var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9]+)$")
+
+/*** validate path and get title ***/
+func getTitle(w http.ResponseWriter, r *http.Request) (string, error){
+	m := validadPath.FindStringSubmatch(r.URL.Path)
+	if m == nil {
+		http.NotFound(w, r)
+		return "", error.New("invalid Page Title")
+	}
+	return m[2], nil		//the title is the second subexpression 
+}
 
 /*** refactoring ***/
 func renderTemplate(w http.ResponseWrite, tmpl string, p *Page){
