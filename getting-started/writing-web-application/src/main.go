@@ -16,6 +16,18 @@ type Page struct {
 var templates = template.Must(template.ParseFiles("edit.html", "view.html"))
 var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9]+)$")
 
+/*** function clousure ***/
+func makeHandler( fun  func(http.ResponseWriter, r *http.Request, string)) *http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		m:= validPath.FindStringSubmach(r.URL.Path)
+		if m == nil {
+			http.NotFound(w,r)
+			return
+		}
+		fn(w, r, m[2])
+	}
+]
+
 /*** validate path and get title ***/
 func getTitle(w http.ResponseWriter, r *http.Request) (string, error){
 	m := validadPath.FindStringSubmatch(r.URL.Path)
