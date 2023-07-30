@@ -82,3 +82,5 @@ Buffer st arts out emp ty but grows as dat a of typ es li ke string, byte, and [
 ### 3.6/ iota
    - /a use iota for create a secuense of related values without spelling out each one explicitly
    - /b
+### 4.1 array
+   - /a The bui lt-in function len.
