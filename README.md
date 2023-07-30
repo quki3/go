@@ -79,3 +79,6 @@ wiki,oficial web, <a href="https://cs.opensource.google/go/go">code open source<
    - /c The bytes package provides the Buffer type for efficient manipu lat ion of byte slices. A
 Buffer st arts out emp ty but grows as dat a of typ es li ke string, byte, and []byte are writt en to it
    - /d
+### 3.6/ iota
+   - /a use iota for create a secuense of related values without spelling out each one explicitly
+   - /b
