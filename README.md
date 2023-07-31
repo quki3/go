@@ -84,3 +84,5 @@ Buffer st arts out emp ty but grows as dat a of typ es li ke string, byte, and [
    - /b
 ### 4.1 array
    - /a The bui lt-in function len.
+### 4.2 append
+   - /a app end s it ems to slices.
