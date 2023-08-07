@@ -89,3 +89,5 @@ Buffer st arts out emp ty but grows as dat a of typ es li ke string, byte, and [
    - /b Each call to appendYouFun must check whether the slice has suficient capacity to hold the new elements in the existing array
 ### 4.4 Struct enbedding and anonymous field
    - /a GO's enbedding struct
+### 4.6 text and HTML templates
+   - /a 
