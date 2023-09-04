@@ -4,4 +4,5 @@
 2. -
 3. -
 4. - channel passed by goroutine
-
+5. - square root
+ 
