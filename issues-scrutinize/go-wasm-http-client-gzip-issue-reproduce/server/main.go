@@ -37,9 +37,12 @@ func httpGzip(w http.ResponseWriter, req *http.Request) {               //func u
 }
 
 func main() {
-        http.Handle("/", http.FileServer(http.Dir(".")))
-        http.HandleFunc("/gzip", httpGzip)
-        http.HandleFunc("/nogzip", httpNoGzip)
-        log.Fatalln(http.ListenAndServe(":8080", nil))
+        http.Handle("/", http.FileServer(http.Dir("."))) //sets up a file server to serve static files from
+							 //the current directory...it is a common way to serve HTML,CSS,javaScript
+        http.HandleFunc("/gzip", httpGzip)	//registers a handler fuction to be executed when
+						//a request is made to the "/gzip" URL path
+        http.HandleFunc("/nogzip", httpNoGzip)  //is the same that above
+        log.Fatalln(http.ListenAndServe(":8080", nil)) //start HTTP server on port 8080, if there's an error it logs the error message
+						       //and exits the program using log.Fatal
 }
 
