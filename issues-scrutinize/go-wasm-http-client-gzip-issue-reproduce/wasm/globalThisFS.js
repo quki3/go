@@ -1,14 +1,23 @@
 
-(()=>{
-	if(!globalThis.fs){ //globalThis.fs = false?
-		console.log(`globalThis.fs = false |
-		then creating globalThis.fs()`);
-		/*---creating globalThis.fs---*/
-		let outputBuf = "";
-		globalThis.fs = {
-			constants: O_WRONLY:-1
+"use strict";
+const debuger = (x) =>{
+	console.log(`debugger => ${x}`)
+}
+if(!globalThis.fs){ //globalThis.fs = false?
+	debuger("globalThis.fs = false creating ... done!");
+		
+	let outputBuf = "";
+	globalThis.fs = {
+		constants:{ 
+			O_WRONLY: -1, //i/o constant normaly used to WRITE ONLY 
+			O_RDWR: -1,
+			O_CREAT: -1,
+			O_TRUNC: -1,
+			O_APPEND: -1,
+			O_EXCL: -1 
 		}
-		console.log(globalThis.fs)
 
-	}else{  console.log("globalThis.fs = true")}
-})()
+	};
+}
+
+
