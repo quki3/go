@@ -1,3 +1,3 @@
-console.log("wasm");
+console.log("wasm/index || ON");
 console.log(enosys());
 globalThisFS()
