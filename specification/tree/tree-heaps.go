@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-	func main() {
+
 	//[obj] holds
 		type MaxHeap struct{
 			array []int
@@ -19,13 +19,44 @@ import (
 		}
 	//	maxHeapifyUp
 		func (h *MaxHeap) maxHeapifyUp(index int){
-			
+			for h.array[parent(index)] < h.array[index]{
+				h.swap(parent(index),index)
+				index = parent(index)
+			}
 		}
-	//	parent
+	//	get the parent index
 		func parent(i int) int{
 			return (i-1)/2 //search the position of the parent node
 			//      		1[0]
 			//		10[1]			20[2] <- position is (parent index) * 2 +2
 			//	5[3] <- position is (parent index) * 2 +1
+		}
+	//	left
+		func left(i int) int{
+			return 2*i +1
+		}
+	//	right 
+		func right(i int) int{
+			return 2*i +1
+		}
+	//	swap
+		func (h *MaxHeap) swap(i1,i2 int){
+			h.array[i1], h.array[i2] = h.array[i2], h.array[i1]
+		}
+
+
 	//Extract
-}
+	func main() {
+		m := &MaxHeap{}
+		fmt.Println(m)
+
+	}
+
+
+
+
+
+
+
+
+
